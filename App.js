@@ -11,11 +11,6 @@ import {
 import axios from "axios";
 import moment from "moment";
 
-function precisionRound(number, precision) {
-  var factor = Math.pow(10, precision);
-  return Math.round(number * factor) / factor;
-}
-
 export default class App extends Component {
   state = {
     data: null,
